@@ -33,6 +33,7 @@ public class WebSecurityConfig {
             "/auth/**",
             "/public/**",
             "/rooms/**",
+            "/api/fitness/**", // API ของเรา
             "/bookings/**",
             "/v2/api-docs",
             "/v3/api-docs",
