@@ -21,7 +21,6 @@ public interface BookingRepository extends JpaRepository<BookedRoom, Long> {
 
     List<BookedRoom> findByGuestEmail(String email);
     
-/////
  // เพิ่ม method ใหม่: หาการจองตามช่วง checkInDate
     @Query("SELECT br FROM BookedRoom br WHERE br.checkInDate >= :startDate AND br.checkInDate < :endDate")
     List<BookedRoom> findByCheckInDateBetween(@Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);

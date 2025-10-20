@@ -91,8 +91,7 @@ public class BookingService implements IBookingService {
                                 && bookingRequest.getCheckOutDate().equals(bookingRequest.getCheckInDate()))
                 );
     }
-    
-/////
+////
     @Override
     public BigDecimal getTotalRevenue(LocalDate startDate, LocalDate endDate) {
         List<BookedRoom> bookings = bookingRepository.findByCheckInDateBetween(startDate, endDate);

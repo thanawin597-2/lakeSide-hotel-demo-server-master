@@ -108,7 +108,7 @@ public class BookingController {
         return ResponseEntity.ok(new RevenueSummaryResponse(totalRevenue));
     }
 
-    // Helper class สำหรับ response (เพิ่มในไฟล์นี้ หรือแยกไฟล์ใหม่)
+    
     public static class RevenueSummaryResponse {
         private BigDecimal totalRevenue;
 
